@@ -1,0 +1,37 @@
+﻿<Window x:Class="Elex.Windows.Categories.AddCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elex.Windows.Categories"
+        mc:Ignorable="d"
+        Title="Создание" Height="340" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" Height="60" Background="#363636">
+
+            <TextBlock FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White">Elex</TextBlock>
+            <TextBlock FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White">Поставщики ▶ Создание</TextBlock>
+
+        </StackPanel>
+
+        <StackPanel Background="#525252" Height="450" Grid.Row="1">
+            <StackPanel Width="350" Margin="0 40 0 10" Height="120" Background="#363636">
+                <StackPanel Width="300" Margin="0 20 0 10">
+                    <TextBlock Text="Наименование Категории" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0 0 0 10"></TextBlock>
+                    <TextBox x:Name="nameBox" Height="30" VerticalContentAlignment="Center" FontSize="16"></TextBox>
+                </StackPanel>
+
+                <TextBlock x:Name="errorBox" Foreground="Red" Visibility="Hidden" FontSize="14" HorizontalAlignment="Center" Margin="0 0 0 0"></TextBlock>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 20 0 0" HorizontalAlignment="Center">
+                <Button Content="Назад" Width="86" Height="34" FontSize="14" FontWeight="Bold" Background="RoyalBlue" Cursor="Hand" Foreground="White" Margin="0 0 10 0" Click="Button_Click"></Button>
+                <Button Content="Сохранить" Width="86" Height="34" FontSize="14" FontWeight="Bold" Background="Green" Cursor="Hand" Foreground="White" Margin="0 0 10 0" Click="Button_Click_1"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
